@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airline Tracking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Airline Tracking</h1>
+    <div class="search-form">
+      <input type="text" id="departureInput" placeholder="Departure">
+      <input type="text" id="arrivalInput" placeholder="Arrival">
+      <input type="date" id="dateInput">
+      <button id="searchBtn">Search</button>
+      <button id="sortPriceBtn">Sort by Price</button>
+      <button id="sortDepartureTimeBtn">Sort by Departure Time</button>
+      <button id="sortArrivalTimeBtn">Sort by Arrival Time</button>
+    </div>
+  </header>
+  <main>
+    <!-- <div class="flight-results" id="flightResults"></div> -->
+    <div class="wrapper" id="flightResults"></div>
+  </main>
+  <div id="flightModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeFlightModal()">&times;</span>
+      <h2 id="modalAirline"></h2>
+      <p id="modalDeparture"></p>
+      <p id="modalArrival"></p>
+      <p id="modalPrice"></p>
+      <p id="modalDepartureTime"></p>
+      <p id="modalArrivalTime"></p>
+      <p id="modalDiscount"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
